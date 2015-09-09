@@ -1,21 +1,46 @@
 Manifest-Version: 1.0
+Implementation-Title: crawler
+Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: josiane
-Class-Path: dependency-jars/jsoup-1.8.3.jar dependency-jars/mail-1.4.7
- .jar dependency-jars/activation-1.1.jar dependency-jars/htmlunit-2.18
- .jar dependency-jars/xalan-2.7.2.jar dependency-jars/serializer-2.7.2
- .jar dependency-jars/commons-collections-3.2.1.jar dependency-jars/co
- mmons-lang3-3.4.jar dependency-jars/httpclient-4.5.jar dependency-jar
- s/httpcore-4.4.1.jar dependency-jars/httpmime-4.5.jar dependency-jars
- /commons-codec-1.10.jar dependency-jars/htmlunit-core-js-2.17.jar dep
- endency-jars/xercesImpl-2.11.0.jar dependency-jars/xml-apis-1.4.01.ja
- r dependency-jars/nekohtml-1.9.22.jar dependency-jars/cssparser-0.9.1
- 6.jar dependency-jars/sac-1.3.jar dependency-jars/commons-io-2.4.jar 
- dependency-jars/commons-logging-1.2.jar dependency-jars/websocket-cli
- ent-9.2.12.v20150709.jar dependency-jars/jetty-util-9.2.12.v20150709.
- jar dependency-jars/jetty-io-9.2.12.v20150709.jar dependency-jars/web
- socket-common-9.2.12.v20150709.jar dependency-jars/websocket-api-9.2.
- 12.v20150709.jar
+Implementation-Vendor-Id: test
+Class-Path: dependency-jars/spring-boot-starter-web-1.2.5.RELEASE.jar 
+ dependency-jars/spring-boot-starter-1.2.5.RELEASE.jar dependency-jars
+ /spring-boot-1.2.5.RELEASE.jar dependency-jars/spring-boot-autoconfig
+ ure-1.2.5.RELEASE.jar dependency-jars/spring-boot-starter-logging-1.2
+ .5.RELEASE.jar dependency-jars/jcl-over-slf4j-1.7.12.jar dependency-j
+ ars/slf4j-api-1.7.12.jar dependency-jars/jul-to-slf4j-1.7.12.jar depe
+ ndency-jars/log4j-over-slf4j-1.7.12.jar dependency-jars/logback-class
+ ic-1.1.3.jar dependency-jars/logback-core-1.1.3.jar dependency-jars/s
+ nakeyaml-1.14.jar dependency-jars/spring-boot-starter-tomcat-1.2.5.RE
+ LEASE.jar dependency-jars/tomcat-embed-core-8.0.23.jar dependency-jar
+ s/tomcat-embed-el-8.0.23.jar dependency-jars/tomcat-embed-logging-jul
+ i-8.0.23.jar dependency-jars/tomcat-embed-websocket-8.0.23.jar depend
+ ency-jars/jackson-databind-2.4.6.jar dependency-jars/jackson-annotati
+ ons-2.4.6.jar dependency-jars/jackson-core-2.4.6.jar dependency-jars/
+ hibernate-validator-5.1.3.Final.jar dependency-jars/validation-api-1.
+ 1.0.Final.jar dependency-jars/jboss-logging-3.1.3.GA.jar dependency-j
+ ars/classmate-1.0.0.jar dependency-jars/spring-core-4.1.7.RELEASE.jar
+  dependency-jars/spring-web-4.1.7.RELEASE.jar dependency-jars/spring-
+ aop-4.1.7.RELEASE.jar dependency-jars/aopalliance-1.0.jar dependency-
+ jars/spring-beans-4.1.7.RELEASE.jar dependency-jars/spring-context-4.
+ 1.7.RELEASE.jar dependency-jars/spring-webmvc-4.1.7.RELEASE.jar depen
+ dency-jars/spring-expression-4.1.7.RELEASE.jar dependency-jars/jsoup-
+ 1.8.3.jar dependency-jars/mail-1.4.7.jar dependency-jars/activation-1
+ .1.jar dependency-jars/htmlunit-2.18.jar dependency-jars/xalan-2.7.2.
+ jar dependency-jars/serializer-2.7.2.jar dependency-jars/commons-coll
+ ections-3.2.1.jar dependency-jars/commons-lang3-3.4.jar dependency-ja
+ rs/httpclient-4.3.6.jar dependency-jars/httpcore-4.3.3.jar dependency
+ -jars/httpmime-4.3.6.jar dependency-jars/commons-codec-1.10.jar depen
+ dency-jars/htmlunit-core-js-2.17.jar dependency-jars/xercesImpl-2.11.
+ 0.jar dependency-jars/xml-apis-1.4.01.jar dependency-jars/nekohtml-1.
+ 9.22.jar dependency-jars/cssparser-0.9.16.jar dependency-jars/sac-1.3
+ .jar dependency-jars/commons-io-2.4.jar dependency-jars/commons-loggi
+ ng-1.2.jar dependency-jars/websocket-client-9.2.12.v20150709.jar depe
+ ndency-jars/jetty-util-9.2.11.v20150529.jar dependency-jars/jetty-io-
+ 9.2.11.v20150529.jar dependency-jars/websocket-common-9.2.12.v2015070
+ 9.jar dependency-jars/websocket-api-9.2.12.v20150709.jar
 Build-Jdk: 1.8.0_60
 Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
 Main-Class: test.crawler.BasicCrawlController
 
