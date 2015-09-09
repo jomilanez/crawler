@@ -11,25 +11,20 @@ import org.jsoup.select.Elements;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.DomElement;
-import com.gargoylesoftware.htmlunit.html.HtmlElement;
-import com.gargoylesoftware.htmlunit.html.HtmlForm;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import com.gargoylesoftware.htmlunit.html.HtmlPasswordInput;
-import com.gargoylesoftware.htmlunit.html.HtmlTextArea;
-import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
-
 @Component
 public class ScheduledCrawler {
 
 	private final static MailSender sender = new MailSender();
 	private final static List<String> visitedPages = new ArrayList<String>();
 	
-    @Scheduled(fixedRate = 180000)
+    @Scheduled(initialDelay=60000, fixedRate = 180000)
     public void crawlWebSite() {
     	try {
     		createCrawler("KINDERWAGEN", "http://www.ebay-kleinanzeigen.de/s-zu-verschenken/berlin/anzeige:angebote/kinderwagen/k0c192l3331r30");
+    		createCrawler("BABY", "http://www.ebay-kleinanzeigen.de/s-zu-verschenken/berlin/anzeige:angebote/baby/k0c192l3331r20");
+    		createCrawler("AREA", "http://www.ebay-kleinanzeigen.de/s-zu-verschenken/10179/anzeige:angebote/c192l3521");
+    		createCrawler("KINDER", "http://www.ebay-kleinanzeigen.de/s-zu-verschenken/berlin/anzeige:angebote/kinder/k0c192l3331r20");
+    		createCrawler("REISEBETT", "http://www.ebay-kleinanzeigen.de/s-zu-verschenken/berlin/anzeige:angebote/reisebett/k0c192l3331r20");
     	} catch (Exception e) {
     		e.printStackTrace();
     	}
@@ -65,7 +60,7 @@ public class ScheduledCrawler {
 	}
 
 	
-	private static void sendMessage(final String url) throws IOException {
+	/*private static void sendMessage(final String url) throws IOException {
 		try (final WebClient webClient = new WebClient()) {
 			final HtmlPage page = webClient.getPage(url);
 			
@@ -95,5 +90,5 @@ public class ScheduledCrawler {
 					.getElementsByAttribute("button", "id", "viewad-contact-submit").get(0);
 			sendMessageButton.click();
 		}
-	}
+	}*/
 }
